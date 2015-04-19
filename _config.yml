@@ -110,7 +110,6 @@ redcloth:
 # highlighter: 
 #  - pygments 
 #  - rouge
-layoot: null
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
 #

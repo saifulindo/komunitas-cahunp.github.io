@@ -3,7 +3,6 @@ require "tmpdir"
 
 require "bundler/setup"
 require "jekyll"
-require "jekyll-assets"
 
 
 # Change your GitHub reponame eg. "kippt/jekyll-incorporated"
