@@ -54,7 +54,8 @@ timezone:    nil
 future:      false
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+# pygments:    true
+highlighter: true 
 
 relative_permalinks: true
 
@@ -62,7 +63,7 @@ permalink:     pretty
 paginate_path: 'page:num'
 paginate: 10
 
-markdown:      maruku
+markdown:      redcarpet
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 
@@ -85,7 +86,7 @@ rdiscount:
   extensions: []
 
 redcarpet:
-  extensions: []
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 
 kramdown:
   auto_ids: true
@@ -106,7 +107,9 @@ kramdown:
 redcloth:
   hard_breaks: true
 
-highlighter: pygments rouge
+# highlighter: 
+#  - pygments 
+#  - rouge
 
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets

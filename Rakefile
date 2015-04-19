@@ -3,6 +3,7 @@ require "tmpdir"
 
 require "bundler/setup"
 require "jekyll"
+require "jekyll-assets"
 
 
 # Change your GitHub reponame eg. "kippt/jekyll-incorporated"
@@ -25,7 +26,7 @@ namespace :site do
       cp_r "_site/.", tmp
       Dir.chdir tmp
       system "git init"
-      system "git add ."
+      system "git add --all"
       message = "Site updated at #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
       system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
